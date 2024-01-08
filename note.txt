@@ -1,0 +1,8 @@
+Packages
+========
+
+@uiw/react-md-editor => for markdown editor
+react-markdown => to turn markdown into html.
+rehype-raw => to allow to include html elements in markdown
+github-markdown-css => to apply github-like styles
+@tailwindcss/typography => we can use to add beautiful typographic defaults to any vanilla HTML you don’t control, like HTML rendered from Markdown, or pulled from a CMS.
