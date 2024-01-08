@@ -1,10 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 const config = {
-  content: [
-    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./app/**/*.{js,ts,jsx,tsx,mdx}",
-  ],
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     container: {
       center: true,
@@ -18,6 +14,9 @@ const config = {
       xxl: "1400px",
     },
     extend: {
+      fontFamily: {
+        ubuntu: ["Ubuntu", "sans-serif"],
+      },
       animation: {
         shine: "shine 1s",
         infinite_shine: "infinite_shine 3s infinite",
@@ -47,6 +46,6 @@ const config = {
       },
     },
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/typography")],
 };
 export default config;
