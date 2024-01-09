@@ -7,3 +7,7 @@
 #root {
   @apply bg-default;
 }
+
+/* .prose {
+  @apply max-w-full;
+} */
