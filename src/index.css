@@ -8,6 +8,10 @@
   @apply bg-default;
 }
 
+.w-md-editor {
+  height: 500px !important;
+}
+
 /* .prose {
   @apply max-w-full;
 } */
