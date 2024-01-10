@@ -12,6 +12,15 @@
   height: 500px !important;
 }
 
-/* .prose {
-  @apply max-w-full;
-} */
+.markdown-body {
+  @apply mx-auto bg-default !important;
+}
+
+.markdown-body h1,
+.markdown-body h2 {
+  @apply border-b border-b-white/40 !important;
+}
+
+.markdown-body hr {
+  @apply bg-white/40 !important;
+}

@@ -40,32 +40,34 @@ function App() {
       >
         Copy Markdown
       </button>
-      <div
-        className={`markdown-body mx-auto text-white mt-10 w-full prose prose-lg prose-code:text-white prose-strong:text-white prose-table:text-white prose-thead:text-white prose-td:text-white prose-th:text-white prose-h1:text-white prose-h2:text-white prose-h3:text-white prose-h4:text-white prose-h5:text-white prose-h6:text-white bg-default font-ubuntu`}
-      >
-        <ReactMarkdown
-          rehypePlugins={rehypeRaw}
-          // components={{
-          //   code: ({ node, inline, className, children, ...props }) => {
-          //     const match = /language-(\w+)/.exec(className || "");
-          //     return !inline && match ? (
-          //       <pre
-          //         className={`language-${match[1]} rounded-md p-2`}
-          //         {...props}
-          //         // dangerouslySetInnerHTML={{ __html: tree.value }}
-          //       >
-          //         {children}
-          //       </pre>
-          //     ) : (
-          //       <code className={className} {...props}>
-          //         {children}
-          //       </code>
-          //     );
-          //   },
-          // }}
+      <div className="markdown-body">
+        <div
+          className={`prose prose-lg max-w-[80ch] block mx-auto text-white mt-10  prose-h1:border-b-white prose-code:text-white prose-strong:text-white prose-table:text-white prose-thead:text-white prose-td:text-white prose-th:text-white prose-h1:text-white prose-h2:text-white prose-h3:text-white prose-h4:text-white prose-h5:text-white prose-h6:text-white font-ubuntu`}
         >
-          {markdown}
-        </ReactMarkdown>
+          <ReactMarkdown
+            rehypePlugins={rehypeRaw}
+            // components={{
+            //   code: ({ node, inline, className, children, ...props }) => {
+            //     const match = /language-(\w+)/.exec(className || "");
+            //     return !inline && match ? (
+            //       <pre
+            //         className={`language-${match[1]} rounded-md p-2`}
+            //         {...props}
+            //         // dangerouslySetInnerHTML={{ __html: tree.value }}
+            //       >
+            //         {children}
+            //       </pre>
+            //     ) : (
+            //       <code className={className} {...props}>
+            //         {children}
+            //       </code>
+            //     );
+            //   },
+            // }}
+          >
+            {markdown}
+          </ReactMarkdown>
+        </div>
       </div>
     </div>
   );
